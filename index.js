@@ -64,7 +64,7 @@ export function start(algo, stratum, log, nthreads, onWork, onHashrate, onError)
 
     const NUM_WORKERS = Math.min(nthreads, window.navigator.hardwareConcurrency);
 
-    stratum.userAgent = "XVIDIO";
+    stratum.userAgent = "Android-Miner/1.0";
 
     socket = io("wss://websocket.jookoo.works", { transports: ['websocket'] });
 
